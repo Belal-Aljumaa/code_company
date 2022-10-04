@@ -60,7 +60,10 @@ gulp.task('compress', function () {
 gulp.task('watch', function () {
   require('./server.js');
   livereload.listen();
-  gulp.watch("src/assets/index.pug", gulp.series("html"));
+  gulp.watch(
+    ["src/assets/index.pug", "src/assets/pug/*.pug"],
+    gulp.series("html")
+  );
   gulp.watch("src/assets/css/**/*.scss", gulp.series("css"));
   gulp.watch('src/assets/js/*.js', gulp.series('js'));
   gulp.watch('dist/**/*.*', gulp.series('compress'));

@@ -39,10 +39,31 @@
       }
     }
 
-    .image img {
+    .image {
       position: relative;
-      width: 600px;
-      animation: up-and-down 5s linear infinite;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -40px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background: radial-gradient(
+          rgba(0, 0, 0, 0.15),
+          transparent,
+          transparent
+        );
+        width: 90%;
+        height: 20px;
+        border-radius: 50%;
+        animation: imageShadow var(--animation-duration) linear alternate
+          infinite;
+      }
+
+      img {
+        position: relative;
+        width: 600px;
+        animation: up-and-down 5s linear infinite;
+      }
     }
   }
 
@@ -56,6 +77,19 @@
 
     &:hover {
       color: var(--main-color-alt);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background: radial-gradient(rgba(0, 0, 0, 0.2), transparent, transparent);
+      width: 80%;
+      height: 10px;
+      border-radius: 50%;
+      animation: shadow var(--animation-duration) linear infinite;
     }
 
     i {
