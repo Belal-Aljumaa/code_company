@@ -102,29 +102,23 @@
   .landing .text {
     text-align: center;
   }
+
+  .landing .text p {
+    margin: 10px auto;
+  }
+
+  .landing .image {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
   .landing .text h1 {
     font-size: 28px;
   }
-}
 
-@media (max-width: 991px) {
-  .landing .text p {
-    margin: 10px auto;
-  }
-}
-@media (max-width: 767px) {
   .landing .text p {
     font-size: 18px;
   }
 }
-
-@media (max-width: 991px) {
-  .landing .image {
-    display: none;
-  }
-}
-
 /* End Landing */
