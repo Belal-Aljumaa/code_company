@@ -22,6 +22,7 @@
     "npm": "8.11.0"
   },
   "devDependencies": {
+    "@types/gulp-imagemin": "^7.0.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",
@@ -35,6 +36,7 @@
     "sass": "^1.54.0"
   },
   "dependencies": {
+    "imagemin-webp": "^6.0.0",
     "static-server": "^2.2.1"
   }
 }
