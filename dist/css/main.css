@@ -613,7 +613,7 @@ ul {
 }
 
 .dots {
-  background-image: url("dist/images/dots.png");
+  background-image: url("../images/dots.png");
   height: 186px;
   width: 204px;
   background-repeat: no-repeat;
@@ -1807,7 +1807,7 @@ ul {
   padding-top: var(--main-padding-top);
   padding-bottom: var(--main-padding-bottom);
   position: relative;
-  background-image: url("dist/images/stats.jpg");
+  background-image: url("../images/stats.jpg");
   background-size: cover;
   min-height: 300px;
 }
@@ -1891,7 +1891,7 @@ ul {
       flex-wrap: wrap;
 }
 .discount .image {
-  background-image: url("dist/images/discount-background1.jpg");
+  background-image: url("../images/discount-background1.jpg");
   background-size: cover;
   color: white;
   -ms-flex-preferred-size: 50%;
